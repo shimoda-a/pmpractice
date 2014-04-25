@@ -1,5 +1,9 @@
 PM演習のためのファイル置き場
 
+##第3回の内容
+
+https://github.com/taroyabuki/pmpractice/tree/master/sample
+
 ##第1回の宿題
 
 ###概要
