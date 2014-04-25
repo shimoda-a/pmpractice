@@ -4,7 +4,7 @@
 
 括弧内の3桁の数字は、鈴木憲治ほか『PHP逆引きレシピ』（翔泳社, 第2版, 2013/10）のレシピ番号を表している。例：**(007)**はp.15の「XAMPPをインストールしたい」を指している。
 
-この本のサンプルファイルはサンプルファイル：http://2nd.php-recipe.com/download/ からダウンロードできる。たとえば、(189)の`textbox.php`は`htdocs/07/01/`にある（7.1節だから）。
+この本のサンプルファイルはサンプルファイル：http://2nd.php-recipe.com/download/ からダウンロードできる。たとえば、**(189)**の`textbox.php`は`htdocs/07/01/`にある（7.1節だから）。
 
 ## 必要なもの
 
@@ -25,7 +25,7 @@ NetBeansを起動し、PHPアプリケーション「sample」を作る。
 
 ## データベースの準備
 
-1. **(245)** http://localhost/phpmyadmin にアクセスし、
+1. **(245)** [http://localhost/phpmyadmin](http://localhost/phpmyadmin)にアクセスし、
 1. **(246)** データベース「mydb」を作り、
 1. **(247)** ユーザ名「testuser」、パスワード「pass」でアクセスできるようにする。
 1. **(248)** mydbの中にテーブル「tweets」を作る。このテーブルには、「つぶやき」のidと本文（body）、日時（time）を記録する。
