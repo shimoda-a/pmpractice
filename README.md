@@ -10,6 +10,8 @@ https://github.com/taroyabuki/pmpractice/tree/master/sample
 
 演習用のリポジトリ（＝ファイル置き場）にファイルを追加する。
 
+参考：Google Driveの「PM演習_第1回宿題GitHubの使い方.pptx」
+
 ###作業
 
 1. アカウントを作り、サインインする。
