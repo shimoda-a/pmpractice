@@ -1,0 +1,220 @@
+/*--------------------------------------
+　トップページCSS
+---------------------------------------*/
+#bg_main_image{
+	width: 700px;
+	height: 300px;
+	position: relative;
+	margin: 0 0 20px 0;
+}
+#main_image{
+	width: 690px;
+	height: 445px;
+	padding: 5px;
+	background: url(../img/myphoto/txt_data.gif) no-repeat;
+	position: absolute;
+	top: 5px;
+	left: 5px;
+}
+#main_image p{
+	line-height: 160%;
+}
+
+/*--------------------------------------
+　基礎設定
+---------------------------------------*/
+*{ margin:0; padding:0;}
+img{ border:0;}
+a img{ border:0;}
+
+body{
+	color:#666666;
+	font-family:'メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+    font-size: 12px; /* モダンブラウザ */
+    *font-size: 80%; /* IE 7 */
+    *font: 80%; /* IE 6以下 */
+}
+table,div{
+	margin:auto;
+}
+
+p,th,td,li{
+	font-size:12px;
+	*font-size:90%;
+	*font:90%;
+}
+
+/*--------------------------------------
+　ヘッドメニューフォント変更
+---------------------------------------*/
+#oto #oto{background-color: white}
+#aku #aku{background-color: white}
+#memo #memo{background-color: white}
+#gakka #gakka{background-color: white}
+#kougi #kougi{background-color: white}
+#siryou #siryou{background-color: white}
+#sinro #sinro{background-color: white}
+
+/*--------------------------------------
+　共通リンク
+---------------------------------------*/
+a{
+	color:#0099FF;/*通常のリンクテキストカラー*/
+}
+a:hover{
+	color:#FF9900;/*マウスが乗った時の通常のリンクテキストカラー*/
+	text-decoration:underline;
+}
+
+
+/*--------------------------------------
+　見出しタグ
+---------------------------------------*/
+h1{
+	font-size:11px;
+	font-weight:normal;
+	border-color:#333333;
+	border-width:0px 0 0 4px ;
+	color:#333333;
+	text-indent:10px;
+	line-height:18px;
+	vertical-align:top;
+	padding:20px 0 0 0;
+}
+h2{　/*小さい文字*/
+	font-size:14px;
+	color:#666666;
+	text-indent:10px;
+	vertical-align:top;
+	height:42px;
+	line-height:42px;
+	margin:0 0 5px 0;
+}
+h4{/*基本的につかってるやつ*/
+	font-size: 30px
+}
+
+.obj{
+	margin:0 6px 0 6px;
+}
+
+.obj p{
+	line-height:160%;
+	margin:0 0 12px 0;
+}
+
+/*--------------------------------------
+　レイアウト
+---------------------------------------*/
+#wrap{
+	width:920px;
+	background:url(../img/common/bg_con.gif) repeat-y;
+	margin:0 auto 0 auto;
+	text-align:left;
+}
+#head{
+	width:918px;
+	margin:0 1px 0 1px;
+}
+#head p#logo{
+	font-size:24px;
+	font-weight:normal;
+	font-family:"Courier New", Courier, mono;
+	border-color:#333333;
+	border-width:0px 0 0 4px ;
+	color:#0099CC;
+	text-indent:10px;
+	line-height:24px;
+}
+#head p#logo a{
+	text-decoration:none;
+	color:orange;
+}
+#head p#logo a:hover{
+	text-decoration:none;
+	color:orange;
+}
+td{
+	height: 30px;
+}
+/*--------------------------------------
+　ヘッダーメニュー
+---------------------------------------*/
+#head_menu{
+	width:900px;
+	background:url(../img/common/bg_menu.gif) no-repeat;
+	font-size:10px;
+	height:44px;
+	color:#FFFFFF;
+	margin:0 0 0 10px;
+}
+#head_menu ul{
+	list-style-type:none;
+	padding:1px 0 0 1px;
+}
+#head_menu ul li{
+	float:left;
+	background:url(../img/common/bg_menu_sub.gif) right no-repeat;
+	padding:0 60px 0 8px;
+	text-align:middle;
+	height:35px;
+	line-height:36px;
+}
+#head_menu a{
+	color:#333333;
+	font-size:12px;
+	letter-spacing:1px;
+	text-decoration:none;
+	height:25px;
+	vertical-align:middle;
+	margin:0 4px 0 4px;
+}
+#head_menu a:hover{
+	color:#0099CC;
+}
+
+/*--------------------------------------
+　ボディ
+---------------------------------------*/
+#contents{
+	clear:left;
+	margin:0 10px 0 10px;
+	zoom:100%;
+}
+#contents:after{
+	content: "";
+    clear: both;
+    height: 0;
+    display: block;
+    visibility: hidden;
+}
+#main{
+	width:700px;
+	float:left;
+	margin:0 0 0 20px;
+	zoom:100%;
+}
+#main:after{
+	content: "";
+    clear: both;
+    height: 0;
+    display: block;
+    visibility: hidden;
+}
+#main p{
+	line-height:2.0em;
+	margin:0 0 16px 0;
+}
+
+#foot{
+	border-top: 1px solid #cccccc;
+	border-bottom: 1px solid #cccccc;
+	color:#999999;
+    height:40px;
+	clear:both;
+	text-align:center;
+	margin:20px 0 0 0;
+	font-size:11px;
+	padding:6px 0 0 0;
+}
+
