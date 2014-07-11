@@ -23,17 +23,16 @@ $db = new PDO($dsn, $dbUser, $dbPass);
 }
 
 try{
-$sql = "SELECT name, comments from comments";
+$sql = "SELECT link from map where id = 18";
 $prepare = $db->prepare($sql);
 $prepare->execute();
 $result = $prepare->fetchAll(PDO::FETCH_ASSOC);
 
 echo '<dl>';
-foreach ($result as $comments) {
+foreach ($result as $map) {
     
-    $name = $comments['name'];
-    $comments = $comments['comments'];  
-    echo "<dt>$name</dt><dt>$comments</dt>"; 
+    $link = $map['link'];
+    echo "<dt><a href='$link'>$link</a></dt>"; 
 }
 echo '</dl>';
 
