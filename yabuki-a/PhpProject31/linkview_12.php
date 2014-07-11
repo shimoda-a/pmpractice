@@ -23,7 +23,7 @@ $db = new PDO($dsn, $dbUser, $dbPass);
 }
 
 try{
-$sql = "SELECT link from map";
+$sql = "SELECT link from map where id = 13";
 $prepare = $db->prepare($sql);
 $prepare->execute();
 $result = $prepare->fetchAll(PDO::FETCH_ASSOC);
@@ -32,7 +32,7 @@ echo '<dl>';
 foreach ($result as $map) {
     
     $link = $map['link'];
-    echo "<dt>$link</dt>"; 
+    echo "<dt><a href='$link'>$link</a></dt>"; 
 }
 echo '</dl>';
 
