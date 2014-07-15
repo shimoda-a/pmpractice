@@ -1,6 +1,3 @@
-
-              
-                
   var myLatLng = new google.maps.LatLng(35.691688,140.020513);
 
   

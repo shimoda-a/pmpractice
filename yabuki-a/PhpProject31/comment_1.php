@@ -1,16 +1,16 @@
 <?php
 header("HTTP/1.1 301 Moved Permanetly");
-header("Location: commentform.php");
+header("Location: commentform_1.php");
 $comment = $_POST["comment"]; 
 $name = $_POST["name"];
 $shopid = $_POST["shopid"];
 
-try {
-    $dsn = 'mysql:host=localhost;dbname=ramens;charset=utf8';
-    $dbUser = 'test';
-    $dbPass = 'pass';
 
-    $db = new PDO($dsn, $dbUser, $dbPass);
+try {
+$dsn = sprintf('mysql:host=%s;dbname=%s;charset=utf8',
+  $_SERVER["C4SA_MYSQL_HOST"],
+  $_SERVER["C4SA_MYSQL_DB"]);
+$db = new PDO($dsn, $_SERVER["C4SA_MYSQL_USER"], $_SERVER["C4SA_MYSQL_PASSWORD"]);
 } catch (PDOException $e) {
     echo "接続できませんでした" . $e->getMessage();
 }
@@ -20,7 +20,7 @@ try {
     $prepare = $db->prepare($sql);
     $prepare->bindValue(':comment', $comment);
     $prepare->bindValue(':name', $name);
-    $prepare->bindValue(':shopid', $shopid);
+    $prepare->bindValue(':shopid', 1);
     $prepare->execute();
 } catch (PDOException $e) {
     echo "挿入失敗" . $e->getMessage();
