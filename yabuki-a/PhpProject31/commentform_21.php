@@ -32,6 +32,11 @@
                             <dd><input type="submit" value="投稿する" /></dd>
                         </dl>
                     </form>
+                         <dl>
+                            <form>
+                                <p><a href="button" onClick="window.close(); return false" />ウィンドウを消す</p>
+                            </form>
+                        </dl>    
                 </td>
             </tr>
         </table>
