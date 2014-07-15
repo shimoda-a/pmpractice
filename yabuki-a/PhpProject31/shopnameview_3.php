@@ -1,28 +1,15 @@
-<!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title></title>
-    </head>
-    <body>
 <?php
                     try {
-                        $dsn = 'mysql:host=localhost;dbname=ramens;charset=utf8';
-                        $dbUser = 'test';
-                        $dbPass = 'pass';
-
-                        $db = new PDO($dsn, $dbUser, $dbPass);
+$dsn = sprintf('mysql:host=%s;dbname=%s;charset=utf8',
+  $_SERVER["C4SA_MYSQL_HOST"],
+  $_SERVER["C4SA_MYSQL_DB"]);                      
+$db = new PDO($dsn, $_SERVER["C4SA_MYSQL_USER"], $_SERVER["C4SA_MYSQL_PASSWORD"]);
                     } catch (PDOException $e) {
                         echo "接続できませんでした" . $e->getMessage();
                     }
 
                     try {
-                        $sql = "SELECT shopname from map  where id = 3";
+                        $sql = "SELECT shopname from map where id = 3";
                         $prepare = $db->prepare($sql);
                         $prepare->execute();
                         $result = $prepare->fetchAll(PDO::FETCH_ASSOC);
@@ -38,5 +25,3 @@ and open the template in the editor.
                         echo "取得失敗" . $e->getMessage();
                     }
                     ?>
-</body>
-</html>
