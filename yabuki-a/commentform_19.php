@@ -1,7 +1,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>コメント表示のサンプル</title>
+        <title>コメントフォーム</title>
     </head>
     <body>
         <table border="1" width="120" height="120">

@@ -19,7 +19,7 @@ echo '<dl>';
 foreach ($result as $map) {
     
     $link = $map['link'];
-    echo "<dt><a href='$link' target='_blank'>$link</a></dt>"; 
+    echo "<dt><a href='$link' target='_blank />$link</a></dt>"; 
 }
 echo '</dl>';
 
