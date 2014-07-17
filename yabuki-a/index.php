@@ -6,6 +6,6 @@
   <title>ラーメンマップ</title>
   <div id="map" style="width: 740px; height: 400px;"></div>
   <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
-  <script type="text/javascript" src="home.js"></script></head>
+  <script type="text/javascript" src="index.js"></script></head>
 <body></body>
 </html>
