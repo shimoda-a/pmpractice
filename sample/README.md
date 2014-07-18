@@ -115,7 +115,7 @@ INSERT INTO tweets (body) VALUES ('こんばんは');
 
 本質は、`INSERT INTO tweets (body) VALUES ('テスト')`である。サンプルの`htdocs/php-recipe/08/02/pdo_inserty.php`を参考に、これを実行する`tweet.php`を作る。
 
-** 実行するとあたらしいつぶやきが保存される。`showall.php`でそのことを確認できたら成功。**
+**実行するとあたらしいつぶやきが保存される。`showall.php`でそのことを確認できたら成功。**
 
 ## **(188), (189)** フォーム
 
